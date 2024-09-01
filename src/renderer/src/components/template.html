@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaving Certificate</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #certificate {
+            width: 210mm;
+            height: 297mm;
+            padding-top: 20mm;
+            padding-left: 12mm;
+             padding-right: 12mm;
+            box-sizing: border-box;
+            background-color: white;
+            font-family: "Times New Roman", Times, serif;
+            border: 2px solid black;
+            font-size: 11pt;
+            position: relative;
+            font-weight: 500;
+        }
+        #certificate::before {
+            content: '';
+            position: absolute;
+            top: 10mm;
+            left: 10mm;
+            right: 10mm;
+            bottom: 10mm;
+            border: 2px solid black;
+        }
+        pre {
+            font-family: inherit;
+            font-size: inherit;
+            margin: 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .text-field {
+            border: none;
+            border-bottom: 1px solid black;
+            font-family: inherit;
+            font-size: inherit;
+            outline: none;
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div id="certificate">
+        <h3 style="text-align: center; margin-top: -25px">Jaggannath Shikshan Prasarak Mandal's</h3>
+        <h2 style="text-align: center; margin-top: -15px; font-size: 23px;">Shashikant Sakharam Chaudhari Kanya Vidyalay, Yawal</h2>
+        <h3 style="text-align: center; margin-top: -20px;">Taluka- Yawal, Dist. Jalgaon</h3>
+        <p style="text-align: center; margin-top: -10px; font-weight: normal;">Phone No. 02585-261290 &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; E Mail - mksyawal@yahoo.in</p>
+        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+          <span>Sr. No. 78</span>
+          <span>G. Register No.</span>
+        </div>
+        <pre>School Reg. No.- Edu. Depu.Dir/Sec-2/First Appru/90-91/92/Div.Sec.Depu.Dir.Nashik/Datted 12-3-92</pre>
+        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+          <span>U Dise No.- 27031508414</span>
+          <span>Board- Nashik</span>
+          <span>Index No.- 15.15.005</span>
+        </div>
+        <h2 style="text-align: center; text-decoration: underline; margin-bottom: 20px;">Leaving Certificate</h2>
+        <pre style="line-height: 1.6; padding: 10px 0;">
+Student ID.: <input type="text" class="text-field" id="studentId" maxlength="25" size="25"> U.I.D. No. (Aadhar Card No.): <input type="text" class="text-field" id="aadharNo" maxlength="15" size="15">
+Name of the student in full (Name): <input type="text" class="text-field" id="name" maxlength="12" size="12"> (Father's Name): <input type="text" class="text-field" id="fathersName" maxlength="12" size="12">
+(Surname): <input type="text" class="text-field" id="surname" maxlength="20" size="20">
+Mother's Name: <input type="text" class="text-field" id="mothersName" maxlength="30" size="30">
+Nationality: <input type="text" class="text-field" id="nationality" maxlength="15" size="15" value="Indian"> Mother tongue: <input type="text" class="text-field" id="motherTongue" maxlength="29" size="29">
+Religion: <input type="text" class="text-field" id="religion" maxlength="10" size="10"> Caste: <input type="text" class="text-field" id="caste" maxlength="15" size="15"> Sub-caste: <input type="text" class="text-field" id="subCaste" maxlength="15" size="15">
+Place of Birth: <input type="text" class="text-field" id="placeOfBirth" maxlength="20" size="20"> Taluka: <input type="text" class="text-field" id="taluka" maxlength="25" size="25"> Dist: <input type="text" class="text-field" id="district" maxlength="25" size="25"> State: <input type="text" class="text-field" id="state" maxlength="20" size="20"> Country: India
+Date of Birth (DD/MM/YY): according to the Christian era<input type="text" class="text-field" id="dateOfBirth" maxlength="20" size="20">
+Date of Birth (In words): <input type="text" class="text-field" id="dateOfBirthInWords" maxlength="50" size="50">
+Last school attended & standard: <input type="text" class="text-field" id="lastAttendedSchool" maxlength="45" size="45">
+                                                    <input type="text" class="text-field" id="lastSchoolStandard" maxlength="45" size="45">
+Date of admission in this school: <input type="text" class="text-field" id="dateOfAdmission" maxlength="10" size="10"> Standard: <input type="text" class="text-field" id="admissionStandard" maxlength="20" size="20">
+Progress: <input type="text" class="text-field" id="progress" maxlength="25" size="25"> Conduct: <input type="text" class="text-field" id="conduct" maxlength="25" size="25">
+Date of leaving school: <input type="text" class="text-field" id="dateOfLeaving" maxlength="10" size="10">
+Standard in which studying and since when (in words and figure): <input type="text" class="text-field" id="currentStandard" maxlength="30" size="30">
+Reason of leaving school: <input type="text" class="text-field" id="reasonOfLeaving" maxlength="30" size="30">
+Remarks: <input type="text" class="text-field" id="remarks" maxlength="50" size="50">
+        </pre>
+        <p style="margin-top: 20px;">Certified that the above information is in accordance with the School Register.</p>
+        <div style="display: flex; justify-content: space-between; margin-top: 40px;">
+          <div>Date: <span id="currentDate"></span></div>
+          <div>Month: <span id="currentMonth"></span></div>
+          <div>Year: <span id="currentYear"></span></div>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-top: 40px;">
+          <div>Class Teacher</div>
+          <div>Clerk</div>
+          <div>Head Master<br>(Seal)</div>
+        </div>
+        <pre style="font-size: 10pt; margin-top: 20px;">* No change in any entry in this certificate shall be made except by the authority issuing it.
+* Any infringement of the rule is liable to be dealt with by rustication or by other suitable punishment.</pre>
+    </div>
+    <script>
+        // Function to format date (assuming DD/MM/YYYY format)
+        function formatDate(dateString) {
+            if (!dateString) return '';
+            const [day, month, year] = dateString.split('/');
+            return `${day.padStart(2, '0')}/${month.padStart(2, '0')}/${year}`;
+        }
+
+        // Function to populate the certificate with actual data
+        function populateCertificate() {
+            const student = {
+                studentId: '',
+                aadharNo: '',
+                name: '',
+                fathersName: '',
+                surname: '',
+                mothersName: '',
+                motherTongue: '',
+                religion: '',
+                caste: '',
+                subCaste: '',
+                placeOfBirth: '',
+                taluka: '',
+                district: '',
+                state: '',
+                dateOfBirth: '',
+                dateOfBirthInWords: '',
+                lastAttendedSchool: '',
+                lastSchoolStandard: '',
+                dateOfAdmission: '',
+                admissionStandard: '',
+                progress: '',
+                conduct: '',
+                dateOfLeaving: '',
+                currentStandard: '',
+                reasonOfLeaving: '',
+                remarks: ''
+            };
+
+            // Populate input fields
+            for (const [key, value] of Object.entries(student)) {
+                const input = document.getElementById(key);
+                if (input) {
+                    input.value = value;
+                }
+            }
+
+            // Set current date
+            const now = new Date();
+            document.getElementById('currentDate').textContent = now.getDate();
+            document.getElementById('currentMonth').textContent = now.toLocaleString('default', { month: 'long' });
+            document.getElementById('currentYear').textContent = now.getFullYear();
+        }
+
+        // Call the function to populate the certificate
+        populateCertificate();
+    </script>
+</body>
+</html>
